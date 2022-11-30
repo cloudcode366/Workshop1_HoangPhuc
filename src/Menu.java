@@ -19,39 +19,39 @@ public class Menu {
     public void option(Arr array, int i) throws Exception {
         int n;
         switch (i) {
-            case 1 -> {
+            case 1 :
                 System.out.print("Enter element(only integer):");
                 n = sc.nextInt();
                 int[] arr = new Func().findElement(array, n);
                 System.out.print("Your element you enter appears in some index here:");
                 for (int tmp : arr) System.out.print(tmp + "  ");
-            }
-            case 2 -> {
+            break;
+            case 2 :
                 System.out.print("Enter element you want to delete:");
                 n = sc.nextInt();
                 new Func().deleteElement(array, n);
-            }
-            case 3 -> {
+            break;
+            case 3 :
                 System.out.print("Enter element you wat to insert:");
                 n = sc.nextInt();
                 System.out.print("Enter index you want to insert:");
                 int index = sc.nextInt();
                 new Func().insert(array, n, index);
-            }
-            case 4 -> System.out.print("The maximum value of array is:" + new Func().max(array));
-            case 5 -> System.out.print("The minimum value of array is:" + new Func().min(array));
-            case 6 -> {
+            break;
+            case 4 : System.out.print("The maximum value of array is:" + new Func().max(array)); break;
+            case 5 : System.out.print("The minimum value of array is:" + new Func().min(array)); break;
+            case 6 :
                 System.out.print("The duplicate values of array is:");
                 for (int tmp : new Func().findDuplicates(array)
                 ) {
                     System.out.print(tmp + "  ");
                 }
-            }
-            case 7 -> new Func().show(array);
-            default -> {
+            break;
+            case 7 : new Func().show(array); break;
+            default :
                 System.out.println("Error option, enter again.");
                 throw new Exception();
-            }
+
         }
 
     }

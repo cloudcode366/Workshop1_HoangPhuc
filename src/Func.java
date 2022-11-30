@@ -1,5 +1,7 @@
+import org.jetbrains.annotations.NotNull;
+
 public class Func {
-    public int[] findElement(Arr array, int n) {
+    public int[] findElement(@NotNull Arr array, int n) {
         int count = 0;
         for (int tmp : array.getArray()) if (n == tmp) count++;
         int[] i = new int[count];
@@ -31,7 +33,7 @@ public class Func {
         array.setArray(arr);
     }
 
-    public void insert(Arr array, int n, int index) {
+    public void insert(@NotNull Arr array, int n, int index) {
         int[] tmp = new int[array.getArray().length + 1];
         for (int l = 0; l < index; l++) {
             tmp[l] = array.getArray()[l];
@@ -43,7 +45,7 @@ public class Func {
         array.setArray(tmp);
     }
 
-    public int max(Arr array) {
+    public int max(@NotNull Arr array) {
         int max = array.getArray()[0];
         for (int tmp : array.getArray()) {
             if (tmp > max) {
