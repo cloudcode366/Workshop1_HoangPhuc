@@ -1,9 +1,10 @@
+
 import java.util.Scanner;
 
 public class Menu {
 
     Scanner sc = new Scanner(System.in);
-
+    private Func func = new Func();
     public Menu() {
 
         System.out.println("1.Find the index of an array element.");
@@ -22,32 +23,32 @@ public class Menu {
             case 1 :
                 System.out.print("Enter element(only integer):");
                 n = sc.nextInt();
-                int[] arr = new Func().findElement(array, n);
+                int[] arr = func.findElement(array, n);
                 System.out.print("Your element you enter appears in some index here:");
                 for (int tmp : arr) System.out.print(tmp + "  ");
             break;
             case 2 :
                 System.out.print("Enter element you want to delete:");
                 n = sc.nextInt();
-                new Func().deleteElement(array, n);
+                func.deleteElement(array, n);
             break;
             case 3 :
                 System.out.print("Enter element you wat to insert:");
                 n = sc.nextInt();
                 System.out.print("Enter index you want to insert:");
                 int index = sc.nextInt();
-                new Func().insert(array, n, index);
+                func.insert(array, n, index);
             break;
-            case 4 : System.out.print("The maximum value of array is:" + new Func().max(array)); break;
-            case 5 : System.out.print("The minimum value of array is:" + new Func().min(array)); break;
+            case 4 : System.out.print("The maximum value of array is:" + func.max(array)); break;
+            case 5 : System.out.print("The minimum value of array is:" + func.min(array)); break;
             case 6 :
                 System.out.print("The duplicate values of array is:");
-                for (int tmp : new Func().findDuplicates(array)
+                for (int tmp : func.findDuplicates(array)
                 ) {
                     System.out.print(tmp + "  ");
                 }
             break;
-            case 7 : new Func().show(array); break;
+            case 7 : func.show(array); break;
             default :
                 System.out.println("Error option, enter again.");
                 throw new Exception();

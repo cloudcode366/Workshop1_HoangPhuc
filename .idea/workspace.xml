@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26cb73c0-6f10-4543-9e2a-01f8d8363216" name="Changes" comment="Upload v1">
+    <list default="true" id="26cb73c0-6f10-4543-9e2a-01f8d8363216" name="Changes" comment="update error menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Func.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <updated>1669745203882</updated>
       <workItem from="1669745205156" duration="4968000" />
       <workItem from="1669794131621" duration="7754000" />
-      <workItem from="1669814527370" duration="2956000" />
+      <workItem from="1669814527370" duration="3862000" />
     </task>
     <task id="LOCAL-00001" summary="Upload v1">
       <created>1669814728645</created>
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669814728645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update error menu">
+      <created>1669819420799</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819420799</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +108,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Upload v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload v1" />
+    <MESSAGE value="update error menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="update error menu" />
   </component>
 </project>
